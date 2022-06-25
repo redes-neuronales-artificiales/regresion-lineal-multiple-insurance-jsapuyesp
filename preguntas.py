@@ -122,7 +122,7 @@ def pregunta_03():
     # error cuadrático medio.
     gridSearchCV = GridSearchCV(
         estimator=pipeline,
-        param_grid=param_gird,
+        param_grid=param_grid,
         cv=5,
         scoring="neg_mean_squared_error",
         refit=True,
